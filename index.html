@@ -510,7 +510,7 @@ footer { font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--lin
   HOW TO ADD A PHOTO OR CERTIFICATE
   1. Put the image file in the "images" folder next to index.html (e.g. images/ksnm-best-poster.jpg).
   2. Fill in "src" below with that path. Items with an empty src show a placeholder card.
-  3. To add a new item, copy one line and change it. cat is one of: award, conference, project.
+  3. To add a new item, copy one line and change it. cat is one of: award, conference, project, activity.
   4. More photos for the same item: add  more: ["images/a.jpg", "images/b.jpg"]
      The card shows "src" as the cover; clicking opens a viewer with arrows to flip through all of them.
 */
@@ -520,10 +520,11 @@ const GALLERY = [
   { src: "images/ksnm-2026-poster.jpg", cat: "conference", date: "2026", title: "Poster session, KSNM & ARCCNM 2026", file: "images/ksnm-2026-poster.jpg", pos: "50% 12%" },
   { src: "images/capstone-first-prize.jpg", cat: "award",      date: "2025", title: "Excellence Award, Capstone Design Competition",        file: "images/capstone-first-prize.jpg" },
   { src: "images/hyundai-mobis.jpg", cat: "award",      date: "2025", title: "First Prize, Hyundai Mobis Competition",          file: "images/hyundai-mobis.jpg" },
-  { src: "images/graduation-project.jpg", cat: "project",    date: "2025", title: "Graduation project: Automated Response System for Vehicle Accidents", file: "images/graduation-project.jpg", pos: "50% 8%", tall: true }
+  { src: "images/graduation-project.jpg", cat: "project",    date: "2025", title: "Graduation project: Automated Response System for Vehicle Accidents", file: "images/graduation-project.jpg", pos: "50% 8%", tall: true },
+  { src: "images/yutt-rackets.jpg", cat: "activity", date: "2026", title: "YUTT, Yonsei University Tennis Club", file: "images/yutt-rackets.jpg", more: ["images/yutt-team.jpg"] }
 ];
 
-const CATS = { all: "All", award: "Awards & Certificates", conference: "Conferences", project: "Projects" };
+const CATS = { all: "All", award: "Awards & Certificates", conference: "Conferences", project: "Projects", activity: "Activities" };
 const grid = document.getElementById("gallery-grid");
 const filters = document.getElementById("gallery-filters");
 const lb = document.getElementById("lightbox");
