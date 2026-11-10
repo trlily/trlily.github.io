@@ -180,7 +180,11 @@ section h2 {
   text-wrap: balance;
 }
 
-.lede { font-size: 1.08rem; max-width: 62ch; margin: 0; }
+.lede { font-size: 1.08rem; margin: 0; }
+.lede + .lede { margin-top: 12px; }
+.focus { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 18px 0 0; padding: 0; list-style: none; }
+.focus .focus-label { font-family: var(--font-mono); font-size: 0.7rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-right: 6px; }
+.focus li:not(.focus-label) { font-size: 0.82rem; font-weight: 500; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); }
 
 .highlights { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 24px; }
 .hl { background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--accent); border-radius: 6px; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; }
@@ -346,8 +350,19 @@ footer { font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--lin
 
   <main>
 
-    <section id="about" aria-label="About">
+    <section id="about" aria-labelledby="about-h">
+      <h2 id="about-h">About</h2>
       <p class="lede">I work on deep learning for medical imaging, with a focus on PET/CT image restoration and neuroimaging. My current research at the MIND Lab covers CT-to-MRI translation, PET quantification, and brain lesion and region segmentation for dementia and other neurodegenerative disorders.</p>
+      <p class="lede">My goal is to make clinical PET faster, safer, and more consistent: restoring low-dose and short-acquisition scans to diagnostic quality, and harmonizing image quality across scanners and institutions so that quantitative measures stay reliable in practice.</p>
+      <ul class="focus" aria-label="Current focus">
+        <li class="focus-label">Current focus</li>
+        <li>Diffusion models</li>
+        <li>PET/CT restoration</li>
+        <li>Cross-institutional harmonization</li>
+        <li>CT-to-MRI translation</li>
+        <li>Amyloid PET quantification</li>
+        <li>Brain segmentation</li>
+      </ul>
       <div class="highlights">
         <div class="hl"><b>EANM 2026</b><span>Top Rated Oral Presentation for dose-aware diffusion models in PET</span></div>
         <div class="hl"><b>AJNR 2026</b><span>First-author paper on DCLGAN for PET/CT scan-time reduction (IF 3.7)</span></div>
