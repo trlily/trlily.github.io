@@ -46,7 +46,7 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,600;6..72,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,600;6..72,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=Noto+Serif+KR:wght@600;700&display=swap" rel="stylesheet">
 <style>
 /* Layout: sticky identity column on the left, CV sections on the right; one column on phones.
    Detail: a thin blue colormap bar marks the name, the way a scale bar sits beside a scan. */
@@ -61,8 +61,8 @@
   --scroll-thumb: #b9d3f2;
   --scroll-thumb-hover: #93b9e8;
   --on-accent: #ffffff;
-  --font-display: "Newsreader", "Iowan Old Style", Georgia, serif;
-  --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Newsreader", "Noto Serif KR", "Iowan Old Style", Georgia, serif;
+  --font-body: "IBM Plex Sans", "IBM Plex Sans KR", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
   --colormap: linear-gradient(90deg, #08306b, #08519c, #2171b5, #4292c6, #6baed6, #9ecae1, #c6dbef);
   color-scheme: light;
@@ -147,8 +147,8 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
   letter-spacing: -0.01em;
 }
 .scale { height: 8px; width: 100%; border-radius: 3px; background: var(--colormap); margin-top: 14px; }
-.side h1 .ko { display: block; margin-top: 8px; font-family: var(--font-body); font-size: 0.55em; font-weight: 600; letter-spacing: 0; color: var(--muted); }
-.role-ko { margin: 6px 0 0; color: var(--muted); font-size: 0.9rem; }
+.side h1 .ko { display: block; margin-top: 8px; font-size: 0.6em; font-weight: 700; letter-spacing: 0; color: var(--muted); }
+.role-ko { display: block; margin-top: 6px; }
 .role { margin: 0; color: var(--muted); font-size: 0.95rem; line-height: 1.5; }
 .role strong { color: var(--ink); font-weight: 500; }
 
@@ -311,8 +311,7 @@ footer { font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--lin
       <div class="scale" aria-hidden="true"></div>
     </div>
 
-    <p class="role"><strong>Integrated MS/PhD Student</strong><br>Department of Medicine<br>Yonsei University College of Medicine</p>
-    <p class="role-ko" lang="ko">연세대학교 의과대학 의학과 석박사통합과정</p>
+    <p class="role"><strong>Integrated MS/PhD Student</strong><br>Department of Medicine<br>Yonsei University College of Medicine<span class="role-ko" lang="ko">연세대학교 의과대학 의학과 석박사통합과정</span></p>
 
     <ul class="contact">
       <li><span>Email</span><a href="mailto:gykim42@yonsei.ac.kr">gykim42@yonsei.ac.kr</a></li>
