@@ -24,16 +24,17 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Gayeon Kim",
-  "alternateName": ["김가연", "Kim Gayeon"],
+  "alternateName": ["김가연", "김가연 (Gayeon Kim)", "Kim Gayeon"],
+  "description": "연세대학교 의과대학 의학과 석박사통합과정 김가연. 의료 인공지능, PET/CT 영상 복원, 뇌영상 연구.",
   "url": "https://trlily.github.io/",
   "image": "https://trlily.github.io/images/share-card.png?v=3",
   "email": "mailto:gykim42@yonsei.ac.kr",
-  "jobTitle": "Integrated MS/PhD Student",
+  "jobTitle": ["Integrated MS/PhD Student", "석박사통합과정"],
   "affiliation": {
     "@type": "CollegeOrUniversity",
     "name": "Yonsei University College of Medicine",
     "alternateName": "연세대학교 의과대학",
-    "department": { "@type": "Organization", "name": "Department of Medicine (의학과)" }
+    "department": { "@type": "Organization", "name": "의학과", "alternateName": ["연세대학교 의학과", "연세대학교 의과대학 의학과", "Department of Medicine, Yonsei University College of Medicine"] }
   },
   "alumniOf": [
     { "@type": "CollegeOrUniversity", "name": "Yonsei University", "alternateName": "연세대학교" },
@@ -146,6 +147,8 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
   letter-spacing: -0.01em;
 }
 .scale { height: 8px; width: 100%; border-radius: 3px; background: var(--colormap); margin-top: 14px; }
+.side h1 .ko { display: block; margin-top: 8px; font-family: var(--font-body); font-size: 0.55em; font-weight: 600; letter-spacing: 0; color: var(--muted); }
+.role-ko { margin: 6px 0 0; color: var(--muted); font-size: 0.9rem; }
 .role { margin: 0; color: var(--muted); font-size: 0.95rem; line-height: 1.5; }
 .role strong { color: var(--ink); font-weight: 500; }
 
@@ -303,12 +306,13 @@ footer { font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--lin
 
   <aside class="side">
     <div>
-      <div class="photo"><img src="images/profile.jpg?v=8" width="600" height="600" alt="Gayeon Kim" onerror="this.parentElement.style.display='none'"></div>
-      <h1>Gayeon Kim</h1>
+      <div class="photo"><img src="images/profile.jpg?v=8" width="600" height="600" alt="김가연 Gayeon Kim" onerror="this.parentElement.style.display='none'"></div>
+      <h1>Gayeon Kim <span class="ko" lang="ko">김가연</span></h1>
       <div class="scale" aria-hidden="true"></div>
     </div>
 
     <p class="role"><strong>Integrated MS/PhD Student</strong><br>Department of Medicine<br>Yonsei University College of Medicine</p>
+    <p class="role-ko" lang="ko">연세대학교 의과대학 의학과 석박사통합과정</p>
 
     <ul class="contact">
       <li><span>Email</span><a href="mailto:gykim42@yonsei.ac.kr">gykim42@yonsei.ac.kr</a></li>
@@ -356,6 +360,7 @@ footer { font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--lin
 
     <section id="about" aria-labelledby="about-h">
       <h2 id="about-h">About</h2>
+      <p class="lede" lang="ko">연세대학교 의학과 김가연입니다. 연세대학교 의과대학 의학과 석박사통합과정에 재학 중이며, 세브란스병원 MIND Lab에서 의료 인공지능을 연구하고 있습니다. 저선량·단시간 PET/CT 영상 복원, 확산모델(diffusion model), 치매 등 신경퇴행성 질환의 뇌영상 분석이 주요 연구 분야입니다. 상명대학교를 조기졸업했습니다.</p>
       <p class="lede">I work on deep learning for medical imaging, with a focus on PET/CT image restoration and neuroimaging. My current research at the MIND Lab covers foundation models, PET quantification, and brain lesion and region segmentation for dementia and other neurodegenerative disorders.</p>
       <p class="lede">I want my research to be meaningful beyond the paper: AI that is actually used in the clinic and makes a difference for patients. Toward that goal, I work on making PET faster, safer, and more consistent, restoring low-dose and short-acquisition scans to diagnostic quality and harmonizing image quality across scanners and institutions so that clinicians can trust what they measure.</p>
       <ul class="focus" aria-label="Current focus">
@@ -437,15 +442,15 @@ footer { font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--lin
         <li class="row">
           <div class="date">Mar 2026 –</div>
           <div>
-            <h3>Yonsei University, Seoul</h3>
-            <p class="sub">Combined Master's–Doctoral Program, Department of Medicine</p>
+            <h3>Yonsei University, Seoul <span lang="ko">(연세대학교)</span></h3>
+            <p class="sub">Combined Master's–Doctoral Program, Department of Medicine <span lang="ko">· 연세대학교 의과대학 의학과 석박사통합과정</span></p>
             <div class="venue"><span class="tag">GPA 4.3 / 4.3</span></div>
           </div>
         </li>
         <li class="row">
           <div class="date">Mar 2022 –<br>Feb 2026</div>
           <div>
-            <h3>Sangmyung University, Seoul</h3>
+            <h3>Sangmyung University, Seoul <span lang="ko">(상명대학교)</span></h3>
             <p class="sub">B.S., Department of Human-Centered Artificial Intelligence</p>
             <div class="venue"><span class="tag">GPA 4.37 / 4.5</span><span class="tag strong">Early graduation</span></div>
           </div>
